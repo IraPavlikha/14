@@ -109,7 +109,7 @@ body {
 
 /* стили карточек */
 .card {
-    background: linear-gradient(145deg, #b3b3b3, #8f8f8f);
+    background: linear-gradient(145deg, #698085, #8f8f8f);
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.2), inset 0 1px 2px rgba(255,255,255,0.3);
     transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1);
@@ -142,11 +142,11 @@ body {
 }
 
 .card.furri {
-    background-image: url('furri.png');
+    background-image: url("https://i.pinimg.com/736x/c9/e0/01/c9e00132b3ab51681122656c25a38eec.jpg");
 }
 
 .card.banner {
-    background-image: url('banner.png');
+    background-image: url("https://i.pinimg.com/736x/5d/11/da/5d11dab6c74c7250a1397958010081a9.jpg");
 }
 
 /* оверлей при ховере */
@@ -194,7 +194,7 @@ body {
     font-size: clamp(24px, 5vw, 48px);
     font-weight: 400;
     letter-spacing: 0.2em;
-    color: #3a3a3a;
+    color: #526868;
     text-shadow: 0 4px 12px rgba(0,0,0,0.2);
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -223,7 +223,7 @@ body {
     width: 100%;
     max-width: 700px;
     aspect-ratio: 7/5;
-    background: linear-gradient(145deg, #4e4e4e, #6b6b6b);
+    background: linear-gradient(145deg, #939393, #526868);
     border-radius: 30px;
     display: flex;
     align-items: flex-start;
@@ -351,8 +351,20 @@ body {
     transform: rotate(0deg) scale(1);
 }
 
-.banner-img { background-image: url('banner.png'); }
-.furri-img { background-image: url('furri.png'); }
+.banner-img {
+    background-image: url("https://i.pinimg.com/736x/5d/11/da/5d11dab6c74c7250a1397958010081a9.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.furri-img {
+    background-image: url("https://i.pinimg.com/736x/c9/e0/01/c9e00132b3ab51681122656c25a38eec.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 .card-text-side {
     flex: 1 1 300px;
