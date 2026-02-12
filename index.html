@@ -2,33 +2,37 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>胎兒</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>胎児 · зависимость</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="page">
-    <div class="flower-background">
-        <div class="flower flower-1"></div>
-        <div class="flower flower-2"></div>
-        <div class="flower flower-3"></div>
-        <div class="flower flower-4"></div>
-        <div class="flower flower-5"></div>
-        <div class="flower flower-6"></div>
-        <div class="flower flower-7"></div>
-        <div class="flower flower-8"></div>
-        <div class="flower flower-9"></div>
+    <!-- фиксированные цветы в фоне, не ломают верстку -->
+    <div class="flower-bg">
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
+        <div class="flower"></div>
     </div>
 
-    <div class="card vertical left-top"></div>
-    <div class="card square right-top image banner" data-modal="banner"></div>
-    <div class="card square left-bottom image furri" data-modal="furri"></div>
-    <div class="card vertical right-bottom"></div>
+    <!-- карточки по углам — сетка вместо абсолютных пикселей -->
+    <div class="corner-cards">
+        <div class="card vertical left-top"></div>
+        <div class="card square right-top image banner" data-modal="banner"></div>
+        <div class="card square left-bottom image furri" data-modal="furri"></div>
+        <div class="card vertical right-bottom"></div>
+    </div>
 
-
-    <div class="center-wrapper">
-        <h2 class="page-title">对爱情果实的依赖</h2>
+    <!-- центр — всегда по центру, независимо от экрана -->
+    <div class="center-block">
+        <h2 class="center-title">对爱情果实的依赖</h2>
         <div class="center-shadow"></div>
         <div class="center-card">
             <h1>对爱情果实的依赖</h1>
@@ -36,38 +40,44 @@
     </div>
 </div>
 
-
+<!-- модалки -->
 <div class="modal-overlay" id="modal-banner">
-    <div class="modal-content">
+    <div class="modal-container">
         <div class="business-card">
-            <div class="card-image-section">
-                <div class="card-image banner-img"></div>
+            <div class="card-image-side">
+                <div class="card-img banner-img"></div>
             </div>
-            <div class="card-text-section">
-                <h1 class="card-title">你確定</h1>
-                <p class="card-subtitle">眼泪</p>
-                <div class="card-divider"></div>
-                <p class="card-description">This is a modern business card style modal for This is a modern business card style modal for the banneThis is a modern business card style modal for the banneThis is a modern business card style modal for the banneThis is a modern business card style modal for the banneThis is a modern business card style modal for the banneThis is a modern business card style modal for the banne banner image. Elegant and clean layout.</p>
+            <div class="card-text-side">
+                <h2 class="modal-title">你確定</h2>
+                <p class="modal-sub">眼泪</p>
+                <div class="modal-divider"></div>
+                <p class="modal-desc">
+                    Ты уверен? Слёзы — это тоже зависимость. Плод любви требует тишины.
+                    Этот баннер напоминает о том, что мы прячем за улыбкой.
+                </p>
             </div>
         </div>
-        <span class="modal-close">&times;</span>
+        <button class="modal-close">&times;</button>
     </div>
 </div>
 
 <div class="modal-overlay" id="modal-furri">
-    <div class="modal-content">
-        <div class="business-card">
-            <div class="card-image-section">
-                <div class="card-image furri-img"></div>
+    <div class="modal-container">
+        <div class="business-card reverse">
+            <div class="card-image-side">
+                <div class="card-img furri-img"></div>
             </div>
-            <div class="card-text-section">
-                <h1 class="card-title">不信任</h1>
-                <p class="card-subtitle">花朵</p>
-                <div class="card-divider"></div>
-                <p class="card-description">This modal represents the furri card. Modern glassmorphism, tilted image, smooth animations.</p>
+            <div class="card-text-side">
+                <h2 class="modal-title">不信任</h2>
+                <p class="modal-sub">花朵</p>
+                <div class="modal-divider"></div>
+                <p class="modal-desc">
+                    Недоверие цветёт как пушистый одуванчик — легко сдувается, но семена остаются.
+                    Эта карточка — про хрупкость.
+                </p>
             </div>
         </div>
-        <span class="modal-close">&times;</span>
+        <button class="modal-close">&times;</button>
     </div>
 </div>
 
