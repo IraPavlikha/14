@@ -137,4 +137,3 @@ document.addEventListener('visibilitychange', () => {
     }
 });
 
-console.log('✨ Всё поправлено, дышит ровно');
